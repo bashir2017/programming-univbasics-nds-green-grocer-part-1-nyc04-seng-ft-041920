@@ -23,7 +23,7 @@ def consolidate_cart(cart)
     index_in_reciept = reciept_items.find_index do |i|  
                           i[:item] == cart_item[:item]
                        end 
-        binding.pry 
+
     if index_in_reciept
       reciept_items[index_in_reciept][:count] += 1 
     else 
